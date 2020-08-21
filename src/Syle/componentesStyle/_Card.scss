@@ -1,0 +1,34 @@
+.wrapper-card{
+    margin: 20px 4px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 235px;
+}
+
+.card-img{
+    position: relative;
+    &:hover img{transform: scale(1.05);}
+}
+.titles{
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.card-img-top{
+    width: 100%;
+    position: relative;
+    transform: scale(1);
+    transition: 0.3s;
+    transition-delay: scale 0.2s;
+    & :hover{
+        transform: scale(1.05);
+    }
+}
+    
+    .card-title{    
+    margin-top: 10px;
+    font-size: 18px;
+    color:white;
+
+}

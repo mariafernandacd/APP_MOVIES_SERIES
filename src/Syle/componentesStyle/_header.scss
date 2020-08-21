@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body{
+    background-color: #40424a;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+.navbar{
+    background-color: rgb(35,39,42);
+   display: block;
+    
+}
+
+.input-grey {
+    background:rgb(35,39,42) !important;
+    border: none !important;
+    
+}
+
+.form-control{
+    background-color:  rgb(35,39,42);
+} 
