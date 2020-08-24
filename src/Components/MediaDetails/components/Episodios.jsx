@@ -27,7 +27,7 @@ const Episodios = ({id}) => {
                 </option>
             ))}
             </select>
-                <div>
+                <div className="containerEpisode">
                     {episodes.map((episode) => (
                         <EpisodeCard 
                             key={episode.id} 

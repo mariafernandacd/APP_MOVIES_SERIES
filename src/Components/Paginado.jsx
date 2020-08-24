@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 
 const getItems = (current, totalPage, getUrl) => {
     const offSet = 2;
@@ -20,7 +21,9 @@ if (current - lowerLimite - offSet - 0) {
 
 
     for(let indice = lowerLimite; indice <= upperLimite; indice ++){
-    aux.push(<Link to={getUrl(indice)}>{indice}</Link>)
+    aux.push(<Link  key={`pagination${indice}`}
+    className={`pagination--item 
+    ${indice === current && "pagination--item__active"}`} to={getUrl(indice)}>{indice}</Link>)
     }
     return aux
 }
@@ -38,10 +41,12 @@ function Paginado({media,category,page, totalPage}) {
     const items = getItems(Number(page), totalPage, getUrl)
 
     return (
-        <div className="paginado">
-            {anterior  && <Link to={anterior} >Anterior</Link>}
-                <h6 className="items-paginado">{items}</h6>
-            {siguiente  && <Link to={siguiente}>Siguiente</Link>}
+        <div className="pagination">
+            
+            {anterior  && <Link className="pagination" to={anterior} >  <FiArrowLeft  className="pagination--item" />Anterior</Link>}
+                <h6 className="pagination">{items} ... {totalPage}</h6>
+            {siguiente  && <Link className="pagination"  to={siguiente}><FiArrowRight  className="pagination--item"/> Siguiente   </Link>}
+            
         </div>
     )
 }

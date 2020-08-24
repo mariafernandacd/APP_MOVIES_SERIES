@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Card2 = ({ img, title, media, id, subtitle }) => {
     return (
+        
         <Link to={`/${media}/${id}/info`} className="wrapper-card">
             <div className="card-img">
                 <img 

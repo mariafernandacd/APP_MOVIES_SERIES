@@ -12,6 +12,7 @@ const ContainerMedia = () => {
    
     return (
         <>
+        
             <div className="poster-path">
                 <div className="background-gradient"></div>
                     {data && <img className="poster-path-img"

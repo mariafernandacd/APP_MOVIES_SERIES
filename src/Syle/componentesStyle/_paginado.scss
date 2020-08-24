@@ -5,8 +5,38 @@
 
 .paginado{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(220, 221, 222);
+
 }
 
-.items-paginado{
-    margin: 5px;
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  color: white;
+  
 }
+
+.pagination--item {
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 3px;
+    font-size: 14px;
+    transition: 0.3s;
+    &:hover {
+      background-color: #525455;
+    }
+    &__active {
+      background-color: #525455;
+    }
+  
+  }

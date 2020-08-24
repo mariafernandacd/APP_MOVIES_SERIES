@@ -12,8 +12,9 @@ const ContainerPreview = ({media, category}) => {
 
     return (
         <div className="containerPreview">
+            
             <Link to={`/${media}/${category}/page/1`}> 
-                <h4 className="title-tendencias">{title}<RiArrowRightLine color={'#5194e0'} /></h4>
+                <h2 className="title-tendencias">{title}<RiArrowRightLine color={'#5194e0'} /></h2>
             </Link>
             {
                 isLoading && <div>Cargando...</div> 

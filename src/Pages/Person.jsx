@@ -1,5 +1,5 @@
 import React from 'react'
-import { useRouteMatch, useParams, Link, Switch, Route } from 'react-router-dom';
+import { useRouteMatch, useParams, Link, Switch, Route, NavLink } from 'react-router-dom';
 import Creditos from '../Components/MediaDetails/components/Reparto/Creditos';
 import InfoPerson from '../Components/MediaDetails/components/Reparto/InfoPerson';
 
@@ -11,13 +11,15 @@ function Person() {
     
     return (
         <div>
+            <div>
             <ul className="nav-list">
-                <li className="list">
-                    <Link to={`${url}/info`}>INFORMACION
-                </Link></li>
-                <li className="list"><Link to={`${url}/credits`}>CREDITOS
-                </Link></li>
+                <li>
+                    <NavLink  className="nav-links"  activeClassName="nav--links__active"  to={`${url}/info`}>INFORMACION
+                </NavLink></li>
+                <li><NavLink  className="nav-links"  activeClassName="nav--links__active"  to={`${url}/credits`}>CREDITOS
+                </NavLink></li>
             </ul>
+            </div>
 
             <Switch>
                 <Route path={`${path}/info`}>

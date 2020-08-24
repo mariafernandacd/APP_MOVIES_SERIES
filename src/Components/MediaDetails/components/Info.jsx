@@ -6,7 +6,7 @@ import SocialMedia from '../../socialMedia/SocialMedia';
 
 const Info = ({media, id}) => {
 
-    const [data, isLoading, isError] = useSearchInfo(media, id);
+    const [data,  isError] = useSearchInfo(media, id);
 
     const [externalIds] = useSearchInfo(media, id, "external_ids", "en-US");
 

@@ -10,12 +10,15 @@ const InfoPerson = ({id}) => {
         const { facebook_id, imdb_id, instagram_id, twitter_id } = externalIds
         return (
             <div className="info-person">
-                <div className="info-img">
-                    <img
+                <div >
+                    <img className="container-img"
                     src={`https://image.tmdb.org/t/p/w342/${data.profile_path}`}
                     alt={`portada de ${data.name}`}
                     />
-                    <h3 className="info-img">{data.name|| data.title}</h3>
+                </div>
+                
+                    <div className="movie-info">
+                    <h2>{data.name|| data.title}</h2>
                     <p>{data.biography}</p>
                     {externalIds && (
                     <SocialMedia 

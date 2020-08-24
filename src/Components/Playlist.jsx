@@ -16,6 +16,7 @@ function Playlist() {
   if (data) {
     return (
       <div className="Home">
+        
         <CardContainer cards={data.results} media={media} />
         <Paginado
           className="paginadoContainer"

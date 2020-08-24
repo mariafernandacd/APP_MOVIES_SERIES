@@ -7,10 +7,10 @@ const EpisodeCard = ({img, title, overview, episodeNumber}) => {
             <img src={`https://image.tmdb.org/t/p/w400/${img}`} 
                 alt={`title imagen`}
             />
-            <h1 >
-                EP{episodeNumber} - {title}
-            </h1>
-            <p>{overview}</p>
+            <p className="titleEpisodio">
+                EP{episodeNumber} - 
+            </p> <span className="title">{title}</span>
+            <p className="overviewEpisode">{overview}</p>
         </div>
     )
 }
