@@ -1,5 +1,5 @@
 import React from 'react'
-import { useRouteMatch, useParams, Link, Switch, Route, NavLink } from 'react-router-dom';
+import { useRouteMatch, useParams, Switch, Route, NavLink } from 'react-router-dom';
 import Creditos from '../Components/MediaDetails/components/Reparto/Creditos';
 import InfoPerson from '../Components/MediaDetails/components/Reparto/InfoPerson';
 

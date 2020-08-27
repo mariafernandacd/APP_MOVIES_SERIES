@@ -1,5 +1,5 @@
 import React from 'react'
-import {Route, Link, useRouteMatch, Switch, NavLink} from "react-router-dom";
+import {Route, useRouteMatch, Switch, NavLink} from "react-router-dom";
 import Info from './MediaDetails/components/Info';
 import Similar from "./MediaDetails/components/Similar";
 import Reparto from "./MediaDetails/components/Reparto/Reparto";

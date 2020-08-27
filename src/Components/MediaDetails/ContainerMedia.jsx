@@ -8,7 +8,7 @@ const ContainerMedia = () => {
 
     const { media,id } = useParams();
    
-    const [data, isLoading, isError] = useSearchInfo(media,id)
+    const [data] = useSearchInfo(media,id)
    
     return (
         <>

@@ -8,7 +8,7 @@ const Similar = ({media, id}) => {
 
   if (isError) return <div>Error...</div>;
 
-  if (!data) return <PropagateLoader />;
+  if (!data || isLoading ) return <PropagateLoader />;
 
   if (data) {
     return (
