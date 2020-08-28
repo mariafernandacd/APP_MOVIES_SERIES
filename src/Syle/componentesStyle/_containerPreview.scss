@@ -18,3 +18,14 @@
     color: whitesmoke;
     padding: 50px;
 }
+
+@media (max-width: 600px){
+
+    .overview{
+        width: 500px;
+    }
+    .title-tendencias {
+        font-size:29px;
+    
+    }
+}

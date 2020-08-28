@@ -1,0 +1,9 @@
+.videos{
+    display: flex;
+}
+
+@media (max-width: 600px){
+  .videos{
+      margin-left: 40px;
+  }
+  }

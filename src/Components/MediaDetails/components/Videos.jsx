@@ -11,7 +11,7 @@ function Videos({media, id}) {
         
         <div className="videos">
             {data.results.map(video => (
-                <iframe className="styleVideos"
+                <iframe 
                     id="player"           
                     type="text/html"           
                     width="640"           
@@ -27,4 +27,3 @@ function Videos({media, id}) {
 }
 
 export default Videos
-

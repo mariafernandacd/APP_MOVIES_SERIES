@@ -17,6 +17,15 @@ body{
     
 }
 
+.navbar-nav{
+    width: 200px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+}
 .input-grey {
     background:rgb(35,39,42) !important;
     border: none !important;
@@ -26,3 +35,17 @@ body{
 .form-control{
     background-color:  rgb(35,39,42);
 } 
+
+@media(max-width:500px){
+    .navbar-nav{
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 101%;
+        justify-content: space-around;
+        text-align: center;
+        z-index: 99;
+        background: black;
+        padding: 5px 0px;
+    }
+}
