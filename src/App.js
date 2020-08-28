@@ -6,7 +6,7 @@ import Home from './Pages/Home';
 import Movies from './Pages/Movies'
 import Series from './Pages/Series'
 import Header from './Components/Header'
-import "./Syle/main.scss";
+import "./Style/main.scss";
 import Playlist from './Components/Playlist';
 import ContainerMedia from './Components/MediaDetails/ContainerMedia';  
 import Person from './Pages/Person';

@@ -11,7 +11,7 @@ function Videos({media, id}) {
         
         <div className="videos">
             {data.results.map(video => (
-                <iframe 
+                <iframe   className="videos"
                     id="player"           
                     type="text/html"           
                     width="640"           
