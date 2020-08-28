@@ -1,13 +1,14 @@
 .poster-path{
     width: 100%;
-    height: 600px;
+    
+   
     
 }
 
 .background-gradient{
     background: linear-gradient(90deg, rgb(0, 0, 0) 0px, transparent 50%, transparent);
     width: 100%;
-    height: 600px;
+    height:121.1%;
     position: absolute;
 }
 
@@ -20,11 +21,12 @@
    
 }
 @media (max-width: 600px){
-    .poster-path {
-        height: 150%;
+    .poster-path-img {
+        width: 110%;
+        height: 215px;
         
     }
     .background-gradient{
-        height:36%;
+        height:35%;
     }
 }

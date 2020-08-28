@@ -4,7 +4,7 @@
 }
 
 .container-img{
-    width: 250px;
+    width: 900px;
     height: 370px;
     margin: 10px 40px 40px 40px;
     box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
@@ -17,6 +17,12 @@
     height: 100%;
 }
 
+.infoPerson{
+   
+    margin-right:  200px;
+    margin-top: 20px;
+}
+
 .movie-info{
     color: rgb(220, 221, 222);
     font-weight: 300;
@@ -25,18 +31,42 @@
     margin-top: 20px;
 }
 
+
+.container-imgInfo{
+    display: flex;
+    height: 380px;
+    width: 95%;
+    padding-left: 50px;
+}
+
 @media (max-width: 600px){
     .movie-info{
         margin: 30px;
         height: 600px;
+        width: 100%;
         
     }
-
+    .container-img{
+    width: 60%;
+    height: 350px;
+}
     .info-img{
         width: 100%;
     }
     .movie-img{
         flex-direction: column;
         
+    }
+    .infoPerson{
+        margin-left:0px;
+        padding: 5px;
+        margin-right:30px;
+
+        
+    }
+    
+    .container-imgInfo{
+        display: flex;
+        width: 300px;
     }
 }

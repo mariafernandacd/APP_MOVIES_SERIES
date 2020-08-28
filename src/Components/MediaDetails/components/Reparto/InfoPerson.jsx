@@ -11,14 +11,14 @@ const InfoPerson = ({id}) => {
         return (
             <div className="info-person">
                 <div >
-                    <img className="container-img"
+                    <img className="infoPersonas"
                     src={`https://image.tmdb.org/t/p/w342/${data.profile_path}`}
                     alt={`portada de ${data.name}`}
                     />
                 </div>
                 
                     <div className="movie-info">
-                    <h2>{data.name|| data.title}</h2>
+                    <h2 className="titlePerson">{data.name|| data.title}</h2>
                     <p>{data.biography}</p>
                     {externalIds && (
                     <SocialMedia 

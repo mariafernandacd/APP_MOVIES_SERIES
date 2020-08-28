@@ -29,7 +29,7 @@ const Info = ({media, id}) => {
                     </div>
                     <div className="movie-info">
                         <h2>{data.original_title}</h2>
-                        <p>{data.overview}</p>
+                        <p className="infoPerson">{data.overview}</p>
                         <p>Duracion: {data.runtime} min.</p>
                         <p>Generos: {data.genres.map(genere => {
                                         return <span>{genere.name}</span>
